@@ -1,5 +1,5 @@
 # Grocery List
-
+![alt text](image.png)
 
 # About this project
 Add items to your grocery list, cross them off when complete or delete. Counter for how many you have left.
@@ -18,9 +18,15 @@ Add items to your grocery list, cross them off when complete or delete. Counter 
 
 
 ## How It's Made:
-Tech used: JavaScript, Node.js. Express.js, EJS, MongoDB, CSS
+Tech used: 
+- JavaScript
+- Node.js. 
+- Express.js
+- EJS
+- MongoDB
+- HTML & CSS
 
-Full stack Grocery List. When you mark an item as packed or unpacked, it also updates in the database.
+This is a full stack grocery list application. When you mark an grocery item it grays out and has a strike-through, it also updates in the database as complete or incomplete as true/false.
 
 
 ## Lessons Learned:
