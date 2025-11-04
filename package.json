@@ -1,0 +1,25 @@
+{
+  "name": "crud-express-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.14.2",
+    "bson": ">=1.0.5",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongodb": "^3.7.4"
+  },
+  "devDependencies": {
+    "minimist": ">=1.2.2",
+    "nodemon": "^2.0.22"
+  }
+}

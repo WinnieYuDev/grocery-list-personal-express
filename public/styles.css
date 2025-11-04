@@ -1,0 +1,152 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(233, 229, 175);
+  color: rgb(133, 94, 127); 
+  background-image: url('../background.avif'); 
+  background-repeat: repeat;
+  margin: 20px;
+  padding: 0;
+}
+
+section.list {
+  background-color: rgba(218, 228, 174, 0.8); 
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: rgb(44, 62, 80); 
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(47, 31, 73); 
+  color: rgb(255, 255, 255); 
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: rgb(46, 204, 113);
+}
+
+ul.messages {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ul.messages li.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: rgb(255, 255, 255); /* white */
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s;
+}
+
+ul.messages li.message:hover {
+  transform: scale(1.02);
+}
+
+/* Completed item style */
+span.completed {
+  text-decoration: line-through;
+  color: rgb(136, 136, 136); 
+  cursor: pointer;
+}
+
+span.item {
+  cursor: pointer;
+}
+
+span i.fa-trash {
+  color: rgb(231, 76, 60); 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+span i.fa-trash:hover {
+  color: rgb(192, 57, 43);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(52, 73, 94);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 600px) {
+  form input[type="text"] {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input[type="text"], form button {
+    width: 100%;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+
+  h3{
+    display:none;
+  }
+}
+/* 
+//Citations:
+//Modified code from youtube tutorial: https://www.youtube.com/watch?v=jZ-kmmgi_d0&list=PLBf-QcbaigsJysJ-KFZvLGJvvW-3sfk1S&index=42
+//Reference code from https://www.mongodb.com/resources/languages/express-mongodb-rest-api-tutorial#setting-up-the-project
+//Use of dotenv package to hide sensitive info: https://www.npmjs.com/package/dotenv
+//Use of Learning Mode on AI tools to help with code structure,syntax and debugging 
+*/
