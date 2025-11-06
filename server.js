@@ -14,23 +14,6 @@ const dbName = process.env.MONGO_DB;
 
 // Construct the MongoDB connection URL
 const url = `mongodb+srv://${user}:${pass}@${cluster}/${dbName}?retryWrites=true&w=majority`;
-// Mongoose connect
-
-const mongoose = require('mongoose');
-const mongoURI = `mongodb+srv://${user}:${pass}@${cluster}/${dbName}?retryWrites=true&w=majority`;
-
-const connectToMongo = async () => {
-try {
-    mongoose.set('strictQuery', false)
-    mongoose.connect(mongoURI) 
-    console.log('Mongo connected')
-}
-catch(error) {
-    console.log(error)
-    process.exit()
-}
-}
-module.exports = connectToMongo;
 
 let db;
 
